@@ -1,0 +1,12 @@
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\bin\Debug\netstandard2.0\Payment.Registration.App.deps.json
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\bin\Debug\netstandard2.0\Payment.Registration.App.dll
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\bin\Debug\netstandard2.0\Payment.Registration.App.pdb
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\bin\Debug\netstandard2.0\Payment.Registration.Domain.dll
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\bin\Debug\netstandard2.0\Payment.Registration.Domain.pdb
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\obj\Debug\netstandard2.0\Payment.Registration.App.csprojAssemblyReference.cache
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\obj\Debug\netstandard2.0\Payment.Registration.App.csproj.CoreCompileInputs.cache
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\obj\Debug\netstandard2.0\Payment.Registration.App.AssemblyInfoInputs.cache
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\obj\Debug\netstandard2.0\Payment.Registration.App.AssemblyInfo.cs
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\obj\Debug\netstandard2.0\Payment.Registration.App.csproj.CopyComplete
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\obj\Debug\netstandard2.0\Payment.Registration.App.dll
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.App\obj\Debug\netstandard2.0\Payment.Registration.App.pdb

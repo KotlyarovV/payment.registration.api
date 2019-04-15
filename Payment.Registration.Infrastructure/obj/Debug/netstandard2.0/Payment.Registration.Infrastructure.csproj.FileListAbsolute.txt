@@ -1,0 +1,16 @@
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\bin\Debug\netstandard2.0\Payment.Registration.Infrastructure.deps.json
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\bin\Debug\netstandard2.0\Payment.Registration.Infrastructure.dll
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\bin\Debug\netstandard2.0\Payment.Registration.Infrastructure.pdb
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\bin\Debug\netstandard2.0\Payment.Registration.App.dll
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\bin\Debug\netstandard2.0\Payment.Registration.Domain.dll
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\bin\Debug\netstandard2.0\Payment.Registration.Ef.dll
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\bin\Debug\netstandard2.0\Payment.Registration.App.pdb
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\bin\Debug\netstandard2.0\Payment.Registration.Ef.pdb
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\bin\Debug\netstandard2.0\Payment.Registration.Domain.pdb
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\obj\Debug\netstandard2.0\Payment.Registration.Infrastructure.csprojAssemblyReference.cache
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\obj\Debug\netstandard2.0\Payment.Registration.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\obj\Debug\netstandard2.0\Payment.Registration.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\obj\Debug\netstandard2.0\Payment.Registration.Infrastructure.AssemblyInfo.cs
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\obj\Debug\netstandard2.0\Payment.Registration.Infrastructure.csproj.CopyComplete
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\obj\Debug\netstandard2.0\Payment.Registration.Infrastructure.dll
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.Infrastructure\obj\Debug\netstandard2.0\Payment.Registration.Infrastructure.pdb

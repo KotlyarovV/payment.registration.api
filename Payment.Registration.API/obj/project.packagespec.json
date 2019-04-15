@@ -1,0 +1,63 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\Payment.Registration.API\\Payment.Registration.API.csproj",
+    "projectName": "Payment.Registration.API",
+    "projectPath": "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\Payment.Registration.API\\Payment.Registration.API.csproj",
+    "outputPath": "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\Payment.Registration.API\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "sources": {
+      "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+      "https://api.nuget.org/v3/index.json": {}
+    },
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\Payment.Registration.Infrastructure\\Payment.Registration.Infrastructure.csproj": {
+            "projectPath": "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\Payment.Registration.Infrastructure\\Payment.Registration.Infrastructure.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore": {
+          "target": "Package",
+          "version": "[2.1.7, )"
+        },
+        "Microsoft.AspNetCore.Mvc": {
+          "target": "Package",
+          "version": "[2.2.0, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "Swashbuckle.AspNetCore": {
+          "target": "Package",
+          "version": "[5.0.0-rc2, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

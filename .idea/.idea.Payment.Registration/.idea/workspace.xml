@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a7255f86-d627-43f5-9751-f11d26ec6dc9" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/PaymentFormDTOBuilder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="202">
+              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+              <folding>
+                <marker date="1555144651184" expanded="false" signature="6:189" ph="..." />
+                <marker date="1555144651184" expanded="true" signature="234:4488" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="364:625" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="469:619" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="729:1157" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="824:1151" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="1343:1773" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="1460:1594" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="1698:1767" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="1921:3168" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="2099:2173" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="2285:3019" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="3093:3162" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="3302:4486" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="3658:3804" ph="{...}" />
+                <marker date="1555144651184" expanded="true" signature="3912:4480" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/File.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+              <folding>
+                <marker date="1554981210044" expanded="true" signature="59:181" ph="{...}" />
+                <marker date="1554981210044" expanded="true" signature="83:179" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/Builder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+              <folding>
+                <marker date="1555013501422" expanded="true" signature="62:313" ph="{...}" />
+                <marker date="1555013501422" expanded="true" signature="186:311" ph="{...}" />
+                <marker date="1555013501422" expanded="true" signature="285:305" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/IBuilder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+              <folding>
+                <marker date="1555140573198" expanded="true" signature="43:296" ph="{...}" />
+                <marker date="1555140573198" expanded="true" signature="98:154" ph="{...}" />
+                <marker date="1555140573198" expanded="true" signature="219:294" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/AbstractBuilder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <marker date="1555139831914" expanded="false" signature="6:49" ph="..." />
+                <marker date="1555139831914" expanded="true" signature="94:835" ph="{...}" />
+                <marker date="1555139831914" expanded="true" signature="161:828" ph="{...}" />
+                <marker date="1555139831914" expanded="true" signature="348:557" ph="{...}" />
+                <marker date="1555139831914" expanded="true" signature="608:690" ph="{...}" />
+                <marker date="1555139831914" expanded="true" signature="757:822" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Payment.Registration.Ef/DbContexts/PaymentFormDbContext.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <marker date="1554976551258" expanded="false" signature="6:169" ph="..." />
+                <marker date="1554976551258" expanded="true" signature="215:883" ph="{...}" />
+                <marker date="1554976551258" expanded="true" signature="267:881" ph="{...}" />
+                <marker date="1554976551258" expanded="true" signature="363:396" ph="{...}" />
+                <marker date="1554976551258" expanded="true" signature="534:875" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Payment.Registration.API/Controllers/PaymentFormController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+              <folding>
+                <marker date="1555093340544" expanded="false" signature="6:187" ph="..." />
+                <marker date="1555093340544" expanded="true" signature="235:959" ph="{...}" />
+                <marker date="1555093340544" expanded="true" signature="316:957" ph="{...}" />
+                <marker date="1555093340544" expanded="true" signature="475:559" ph="{...}" />
+                <marker date="1555093340544" expanded="true" signature="659:733" ph="{...}" />
+                <marker date="1555093340544" expanded="true" signature="859:951" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Services/PaymentFormAppService.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-81">
+              <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+              <folding>
+                <marker date="1555146773734" expanded="false" signature="6:287" ph="..." />
+                <marker date="1555146773734" expanded="true" signature="332:3498" ph="{...}" />
+                <marker date="1555146773734" expanded="true" signature="375:451" ph="{...}" />
+                <marker date="1555146773734" expanded="true" signature="521:622" ph="{...}" />
+                <marker date="1555146773734" expanded="true" signature="666:3496" ph="{...}" />
+                <marker date="1555146773734" expanded="true" signature="1674:2050" ph="{...}" />
+                <marker date="1555146773734" expanded="true" signature="2112:2367" ph="{...}" />
+                <marker date="1555146773734" expanded="true" signature="2443:3490" ph="{...}" />
+                <marker date="1555146773734" expanded="true" signature="3271:3480" ph="/* foreach (var f in files) ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Payment.Registration.App/DTOs/PaymentFormDto.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <marker date="1555144791160" expanded="false" signature="6:47" ph="..." />
+                <marker date="1555144791160" expanded="true" signature="88:1781" ph="{...}" />
+                <marker date="1555144791160" expanded="true" signature="114:155" ph="{...}" />
+                <marker date="1555144791160" expanded="true" signature="190:350" ph="{...}" />
+                <marker date="1555144791160" expanded="true" signature="391:598" ph="{...}" />
+                <marker date="1555144791160" expanded="true" signature="624:682" ph="{...}" />
+                <marker date="1555144791160" expanded="true" signature="717:877" ph="{...}" />
+                <marker date="1555144791160" expanded="true" signature="907:968" ph="{...}" />
+                <marker date="1555144791160" expanded="true" signature="1009:1220" ph="{...}" />
+                <marker date="1555144791160" expanded="true" signature="1261:1444" ph="{...}" />
+                <marker date="1555144791160" expanded="true" signature="1481:1779" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.App/DTOs/PaymentFormDto.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/Type.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/AbstractBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Ef/EntityTypeConfigurations/PaymentFormEntityTypeConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Infrastructure/Class1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/PaymentFormDTOBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/PaymentPositionDTOBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.API/Controllers/PaymentFormController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/Builder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/IBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Ef/DbContexts/PaymentFormDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Ef/EntityTypeConfigurations/ApplicantEntityTypeConfiguration.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Ef/EntityTypeConfigurations/PaymentPositionEntityTypeConfigurator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3416F7F4-F4EC-454A-B354-95DE7423B688/59/414ac220/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.API/app.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.API/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/PaymentForm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/PaymentPosition.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/File.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.API/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.App/Services/PaymentFormAppService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/Applicant.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Payment.Registration.App/Class1.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.App/DTOs/PaymentDTO.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Domain/Class1.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.App/Services/PaymentAppService.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration/Controllers/HomeController.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Ef/Class1.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Ef/EntityTypeConfigurators/PaymentFormEntityTypeConfigurator.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Ef/ModelBuilderExtensions.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Ef/DbContexts/Class1.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Ef/EntityTypeConfigurations/PaymentFormEntityTypeConfigurator.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Ef/DbContexts/PaymentFormDbContext.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Domain/Models/Class1.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration/appsettings.json" />
+        <option value="$PROJECT_DIR$/Payment.Registration/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/Payment.Registration/Startup.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.API/Startup.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.App/DTOs/PaymentFormDTO.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.API/Controllers/PaymentFormController.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Infrastructure/Class1.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.App/Builders/AbstractBuilder.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.App/Builders/IBuilder.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.Domain/Models/File.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.App/Builders/PaymentFormDTOBuilder.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.App/DTOs/PaymentFormDto.cs" />
+        <option value="$PROJECT_DIR$/Payment.Registration.App/Services/PaymentFormAppService.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="676" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Payment.Registration" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Payment.Registration" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Payment.Registration.App" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Payment.Registration" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Payment.Registration.App" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Builders" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Payment.Registration" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Payment.Registration.App" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Services" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.Payment.Registration">
+    <configuration name="Payment.Registration" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Payment.Registration.API/Payment.Registration.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Payment.Registration: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Payment.Registration/Payment.Registration.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.1" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.Payment.Registration" />
+      <item itemvalue=".NET Launch Settings Profile.Payment.Registration: IIS Express" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a7255f86-d627-43f5-9751-f11d26ec6dc9" name="Default Changelist" comment="" />
+      <created>1554670707263</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554670707263</updated>
+      <workItem from="1554670718074" duration="352000" />
+      <workItem from="1554797212184" duration="12443000" />
+      <workItem from="1554919556213" duration="11681000" />
+      <workItem from="1554973224229" duration="7591000" />
+      <workItem from="1555002489677" duration="9859000" />
+      <workItem from="1555017205242" duration="77000" />
+      <workItem from="1555024174315" duration="615000" />
+      <workItem from="1555054681407" duration="10442000" />
+      <workItem from="1555092447415" duration="1364000" />
+      <workItem from="1555108111020" duration="1731000" />
+      <workItem from="1555138335284" duration="8200000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="64355000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34795764" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7037643" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
+      <window_info anchor="bottom" id="NuGet" order="7" weight="0.3289689" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="REST Client" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="16" weight="0.3289689" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Tutorials" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Errors In Solution" order="6" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Infrastructure/Payment.Registration.Infrastructure.csproj">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration/Models/ErrorViewModel.cs" />
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Ef/ModelBuilderExtensions.cs" />
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Ef/Migrations/20190410221411_StartMigration.cs" />
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Ef/Migrations/20190410224413_StartMigration.cs" />
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Ef/EntityTypeConfigurations/PaymentPositionEntityTypeConfigurator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1554976551064" expanded="false" signature="6:168" ph="..." />
+            <marker date="1554976551064" expanded="true" signature="228:669" ph="{...}" />
+            <marker date="1554976551064" expanded="true" signature="329:667" ph="{...}" />
+            <marker date="1554976551064" expanded="true" signature="409:661" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Ef/EntityTypeConfigurations/PaymentFormEntityTypeConfigurator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <marker date="1554976551176" expanded="false" signature="6:168" ph="..." />
+            <marker date="1554976551176" expanded="true" signature="228:737" ph="{...}" />
+            <marker date="1554976551176" expanded="true" signature="321:735" ph="{...}" />
+            <marker date="1554976551176" expanded="true" signature="397:729" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/Type.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+          <folding>
+            <marker date="1554981245240" expanded="true" signature="44:110" ph="{...}" />
+            <marker date="1554981245240" expanded="true" signature="67:108" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/PaymentPosition.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1554981204932" expanded="false" signature="6:47" ph="..." />
+            <marker date="1554981204932" expanded="true" signature="93:365" ph="{...}" />
+            <marker date="1554981204932" expanded="true" signature="128:363" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/PaymentForm.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1554981196569" expanded="false" signature="6:47" ph="..." />
+            <marker date="1554981196569" expanded="true" signature="93:415" ph="{...}" />
+            <marker date="1554981196569" expanded="true" signature="124:413" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/Applicant.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1554981215154" expanded="true" signature="59:272" ph="{...}" />
+            <marker date="1554981215154" expanded="true" signature="88:270" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Ef/EntityTypeConfigurations/ApplicantEntityTypeConfiguration.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1554976551109" expanded="false" signature="6:168" ph="..." />
+            <marker date="1554976551109" expanded="true" signature="228:565" ph="{...}" />
+            <marker date="1554976551109" expanded="true" signature="318:563" ph="{...}" />
+            <marker date="1554976551109" expanded="true" signature="392:557" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/PaymentPositionDTOBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.API/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3416F7F4-F4EC-454A-B354-95DE7423B688/59/414ac220/ExceptionDispatchInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="91" column="6" selection-start-line="91" selection-start-column="6" selection-end-line="91" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration/app.config" />
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.API/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration/Properties/launchSettings.json" />
+    <entry file="file://$PROJECT_DIR$/Payment.Registration/Program.cs" />
+    <entry file="file://$PROJECT_DIR$/Payment.Registration/Controllers/PaymentController.cs" />
+    <entry file="file://$PROJECT_DIR$/Payment.Registration/Startup.cs" />
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.API/app.config">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.API/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="944">
+          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+          <folding>
+            <marker date="1555092760960" expanded="false" signature="6:698" ph="..." />
+            <marker date="1555092760960" expanded="true" signature="734:3667" ph="{...}" />
+            <marker date="1555092760960" expanded="true" signature="761:3665" ph="{...}" />
+            <marker date="1555092760960" expanded="true" signature="830:1114" ph="{...}" />
+            <marker date="1555092760960" expanded="true" signature="1185:1400" ph="/* This method gets called by the runtime. Use this method to add services to the container. ... */" />
+            <marker date="1555092760960" expanded="true" signature="1467:2888" ph="{...}" />
+            <marker date="1555092760960" expanded="true" signature="1816:2048" ph="{...}" />
+            <marker date="1555092760960" expanded="true" signature="2183:2374" ph="{...}" />
+            <marker date="1555092760960" expanded="true" signature="2242:2352" ph="{...}" />
+            <marker date="1555092760960" expanded="true" signature="3076:3659" ph="{...}" />
+            <marker date="1555092760960" expanded="true" signature="3123:3200" ph="{...}" />
+            <marker date="1555092760960" expanded="true" signature="3473:3647" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.API/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding>
+            <marker date="1555089505538" expanded="false" signature="6:255" ph="..." />
+            <marker date="1555089505538" expanded="true" signature="291:618" ph="{...}" />
+            <marker date="1555089505538" expanded="true" signature="318:616" ph="{...}" />
+            <marker date="1555089505538" expanded="true" signature="371:445" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Infrastructure/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="85" column="1" selection-start-line="85" selection-start-column="1" selection-end-line="85" selection-end-column="1" />
+          <folding>
+            <marker date="1555093819509" expanded="false" signature="6:258" ph="..." />
+            <marker date="1555093819509" expanded="true" signature="305:2407" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="371:633" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="729:1811" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="877:977" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="1094:1160" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="1241:1324" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="1379:1510" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="1560:1677" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="1718:1805" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="1909:2405" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="1999:2019" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="2088:2259" ph="{...}" />
+            <marker date="1555093819509" expanded="true" signature="2321:2399" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.API/Controllers/PaymentFormController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="30" column="47" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="47" />
+          <folding>
+            <marker date="1555093340544" expanded="false" signature="6:187" ph="..." />
+            <marker date="1555093340544" expanded="true" signature="235:959" ph="{...}" />
+            <marker date="1555093340544" expanded="true" signature="316:957" ph="{...}" />
+            <marker date="1555093340544" expanded="true" signature="475:559" ph="{...}" />
+            <marker date="1555093340544" expanded="true" signature="659:733" ph="{...}" />
+            <marker date="1555093340544" expanded="true" signature="859:951" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Ef/DbContexts/PaymentFormDbContext.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <marker date="1554976551258" expanded="false" signature="6:169" ph="..." />
+            <marker date="1554976551258" expanded="true" signature="215:883" ph="{...}" />
+            <marker date="1554976551258" expanded="true" signature="267:881" ph="{...}" />
+            <marker date="1554976551258" expanded="true" signature="363:396" ph="{...}" />
+            <marker date="1554976551258" expanded="true" signature="534:875" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/IBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding>
+            <marker date="1555140573198" expanded="true" signature="43:296" ph="{...}" />
+            <marker date="1555140573198" expanded="true" signature="98:154" ph="{...}" />
+            <marker date="1555140573198" expanded="true" signature="219:294" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/Builder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+          <folding>
+            <marker date="1555013501422" expanded="true" signature="62:313" ph="{...}" />
+            <marker date="1555013501422" expanded="true" signature="186:311" ph="{...}" />
+            <marker date="1555013501422" expanded="true" signature="285:305" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/AbstractBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <marker date="1555139831914" expanded="false" signature="6:49" ph="..." />
+            <marker date="1555139831914" expanded="true" signature="94:835" ph="{...}" />
+            <marker date="1555139831914" expanded="true" signature="161:828" ph="{...}" />
+            <marker date="1555139831914" expanded="true" signature="348:557" ph="{...}" />
+            <marker date="1555139831914" expanded="true" signature="608:690" ph="{...}" />
+            <marker date="1555139831914" expanded="true" signature="757:822" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.Domain/Models/File.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="45" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <marker date="1554981210044" expanded="true" signature="59:181" ph="{...}" />
+            <marker date="1554981210044" expanded="true" signature="83:179" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Class1.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.App/DTOs/PaymentFormDto.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <marker date="1555144791160" expanded="false" signature="6:47" ph="..." />
+            <marker date="1555144791160" expanded="true" signature="88:1781" ph="{...}" />
+            <marker date="1555144791160" expanded="true" signature="114:155" ph="{...}" />
+            <marker date="1555144791160" expanded="true" signature="190:350" ph="{...}" />
+            <marker date="1555144791160" expanded="true" signature="391:598" ph="{...}" />
+            <marker date="1555144791160" expanded="true" signature="624:682" ph="{...}" />
+            <marker date="1555144791160" expanded="true" signature="717:877" ph="{...}" />
+            <marker date="1555144791160" expanded="true" signature="907:968" ph="{...}" />
+            <marker date="1555144791160" expanded="true" signature="1009:1220" ph="{...}" />
+            <marker date="1555144791160" expanded="true" signature="1261:1444" ph="{...}" />
+            <marker date="1555144791160" expanded="true" signature="1481:1779" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Builders/PaymentFormDTOBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <marker date="1555144651184" expanded="false" signature="6:189" ph="..." />
+            <marker date="1555144651184" expanded="true" signature="234:4488" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="364:625" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="469:619" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="729:1157" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="824:1151" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="1343:1773" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="1460:1594" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="1698:1767" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="1921:3168" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="2099:2173" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="2285:3019" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="3093:3162" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="3302:4486" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="3658:3804" ph="{...}" />
+            <marker date="1555144651184" expanded="true" signature="3912:4480" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Payment.Registration.App/Services/PaymentFormAppService.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-81">
+          <caret line="60" column="38" lean-forward="true" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
+          <folding>
+            <marker date="1555146773734" expanded="false" signature="6:287" ph="..." />
+            <marker date="1555146773734" expanded="true" signature="332:3498" ph="{...}" />
+            <marker date="1555146773734" expanded="true" signature="375:451" ph="{...}" />
+            <marker date="1555146773734" expanded="true" signature="521:622" ph="{...}" />
+            <marker date="1555146773734" expanded="true" signature="666:3496" ph="{...}" />
+            <marker date="1555146773734" expanded="true" signature="1674:2050" ph="{...}" />
+            <marker date="1555146773734" expanded="true" signature="2112:2367" ph="{...}" />
+            <marker date="1555146773734" expanded="true" signature="2443:3490" ph="{...}" />
+            <marker date="1555146773734" expanded="true" signature="3271:3480" ph="/* foreach (var f in files) ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
