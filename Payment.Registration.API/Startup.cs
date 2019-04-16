@@ -57,11 +57,16 @@ namespace Payment.Registration.API
                         Title = "Test API"
                     });  
                 })
-                .AddScoped<IDataService<PaymentForm>, PaymentFormDataService>()
+                .AddScoped<IPaymentFormDataService, PaymentFormDataService>()
                 .AddScoped<IBuilder<Applicant, ApplicantDto>, Builder<Applicant, ApplicantDto>>()
                 .AddScoped<IBuilder<File, FileDto>, Builder<File, FileDto>>()
                 .AddScoped<IBuilder<PaymentPosition, PaymentPositionDto>, PaymentPositionDTOBuilder>()
                 .AddScoped<IBuilder<PaymentForm, PaymentFormDto>, PaymentFormDTOBuilder>()
+                .AddScoped<IBuilder<FileSaveDto, File>, FileBuilder>()
+                .AddScoped<IBuilder<ApplicantSaveDto, Applicant>, ApplicantBuilder>()
+                .AddScoped<IBuilder<PaymentPositionSaveDto, IEnumerable<File>, PaymentPosition>, PaymentPositionBuilder>()
+                .AddScoped<IBuilder<PaymentFormSaveDto, IEnumerable<PaymentPosition>, int, PaymentForm>, PaymentFormBuilder>()
+                .AddScoped<IFileStorageService, FileStorage.FileStorage>()
                 .AddScoped<PaymentFormAppService>();
         }
 

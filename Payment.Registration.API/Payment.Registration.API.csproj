@@ -24,6 +24,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\FileStorage\FileStorage.csproj" />
       <ProjectReference Include="..\Payment.Registration.Infrastructure\Payment.Registration.Infrastructure.csproj" />
     </ItemGroup>
 

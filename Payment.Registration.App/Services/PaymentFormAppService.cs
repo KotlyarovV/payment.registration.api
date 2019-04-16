@@ -6,36 +6,25 @@ using System.Threading.Tasks;
 using Payment.Registration.App.Builders;
 using Payment.Registration.App.DTOs;
 using Payment.Registration.Domain.Models;
+using Payment.Registration.Domain.Specifications;
 using File = Payment.Registration.Domain.Models.File;
 
 namespace Payment.Registration.App.Services
 {
-    public interface IFileStorageService
-    {
-        Task Save(MemoryStream memoryStream, string wayToFile);
-    }
-    
-    public interface IDataService<TEntity> where TEntity : class
-    {
-        Task<IEnumerable<TEntity>> GetAll();
-
-        Task<TEntity> Add(TEntity entity);
-    }
-    
     public class PaymentFormAppService
     {
-        private readonly IDataService<PaymentForm> paymentFormDataService;
+        private readonly IPaymentFormDataService paymentFormDataService;
         private readonly IBuilder<PaymentForm, PaymentFormDto> paymentFormDtoBuilder;
         private readonly IBuilder<FileSaveDto, File> fileBuilder;
         private readonly IBuilder<PaymentPositionSaveDto, IEnumerable<File>, PaymentPosition> paymentPositionBuilder;
-        private readonly IBuilder<PaymentFormSaveDto, IEnumerable<PaymentPosition>, PaymentForm> paymentFormBuilder;
+        private readonly IBuilder<PaymentFormSaveDto, IEnumerable<PaymentPosition>, int, PaymentForm> paymentFormBuilder;
         private readonly IFileStorageService fileStorageService;
 
-        public PaymentFormAppService(IDataService<PaymentForm> paymentFormDataService,
+        public PaymentFormAppService(IPaymentFormDataService paymentFormDataService,
             IBuilder<PaymentForm, PaymentFormDto> paymentFormDtoBuilder,
             IBuilder<FileSaveDto, File> fileBuilder,
             IBuilder<PaymentPositionSaveDto, IEnumerable<File>, PaymentPosition> paymentPositionBuilder,
-            IBuilder<PaymentFormSaveDto, IEnumerable<PaymentPosition>, PaymentForm> paymentFormBuilder,
+            IBuilder<PaymentFormSaveDto, IEnumerable<PaymentPosition>, int, PaymentForm> paymentFormBuilder,
             IFileStorageService fileStorageService)
         {
             this.paymentFormDataService = paymentFormDataService;
@@ -56,6 +45,33 @@ namespace Payment.Registration.App.Services
             return paymentFormsDto;
         }
 
+        public async Task Update(Guid paymentFormId, PaymentFormUpdateDto paymentFormUpdateDto)
+        {
+            var spec = new PaymentFormIdSpecification(paymentFormId);
+            var paymentForm = await paymentFormDataService.Get(spec);
+            var existedFiles = paymentForm.Items
+                .SelectMany(i => i.Files)
+                .ToDictionary(f => f.Id);
+            var files = paymentFormUpdateDto.Items
+                .SelectMany(i => i.Files, (pfDto, f) => new {Item = pfDto, FileDto = f})
+                .Select(f => new
+                {
+                    f.Item, f.FileDto, File = f.FileDto.Id.HasValue 
+                        ? existedFiles[f.FileDto.Id.Value] 
+                        : fileBuilder.Build(f.FileDto.File)
+                })
+                .ToArray();
+
+            var existedItems = paymentForm.Items.ToDictionary(i => i.Id);
+            var items = paymentFormUpdateDto.Items
+                .GroupJoin(files, p => p, p => p.Item, (dto, fs) => new
+                {
+                    Position = dto.Id.HasValue
+                    ? 
+                    
+                })
+        }
+        
         public async Task<Guid> Add(PaymentFormSaveDto paymentFormSaveDto)
         {
             var files = paymentFormSaveDto.Items
@@ -67,20 +83,23 @@ namespace Payment.Registration.App.Services
                 new MemoryStream(Convert.FromBase64String(f.FileDTO.FileInBase64)),
                 f.File.WayToFile)));
 
-            var items = files
-                .GroupBy(f => f.Item,
-                    (i, fs) => paymentPositionBuilder.Build(i, fs.Select(f => f.File).ToArray()))
+            var items = paymentFormSaveDto.Items
+                .GroupJoin(files, p => p, p => p.Item,
+                    (p, pp) => paymentPositionBuilder.Build(p, pp.Select(f => f.File).ToArray()))
                 .ToArray();
-
-            var paymentForm = paymentFormBuilder.Build(paymentFormSaveDto, items);
+            
+            var number = await paymentFormDataService.GetNewPaymentFormNumber();
+            var paymentForm = paymentFormBuilder.Build(paymentFormSaveDto, items, number);
             var paymentFormSaved = await paymentFormDataService.Add(paymentForm);
 
             return paymentFormSaved.Id;
-            /*foreach (var f in files)
-            {
-                await fileStorageService.Save(new MemoryStream(Convert.FromBase64String(f.FileDTO.FileInBase64)),
-                    f.File.WayToFile);
-            }*/
+        }
+
+        public async Task Delete(Guid id)
+        {
+            var spec = new PaymentFormIdSpecification(id);
+            var paymentForm = await paymentFormDataService.Get(spec);
+            await paymentFormDataService.Remove(paymentForm);
         }
     }
 }

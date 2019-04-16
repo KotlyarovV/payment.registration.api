@@ -7,6 +7,11 @@ namespace Payment.Registration.App.Builders
 
     public interface IBuilder<TSource1, TSource2, TDestination>
     {
-        TDestination Build(TSource1 source1, TSource2 source);
+        TDestination Build(TSource1 source, TSource2 files);
+    }
+    
+    public interface IBuilder<TSource1, TSource2, TSource3, TDestination>
+    {
+        TDestination Build(TSource1 source, TSource2 source2, TSource3 source3);
     }
 }

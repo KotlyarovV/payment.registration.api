@@ -19,6 +19,9 @@
     "frameworks": {
       "netcoreapp2.1": {
         "projectReferences": {
+          "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\FileStorage\\FileStorage.csproj": {
+            "projectPath": "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\FileStorage\\FileStorage.csproj"
+          },
           "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\Payment.Registration.Infrastructure\\Payment.Registration.Infrastructure.csproj": {
             "projectPath": "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\Payment.Registration.Infrastructure\\Payment.Registration.Infrastructure.csproj"
           }

@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v2.1": {
       "Payment.Registration.API/1.0.0": {
         "dependencies": {
+          "FileStorage": "1.0.0",
           "Microsoft.AspNetCore": "2.1.7",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.NETCore.App": "2.1.0",
@@ -2742,6 +2743,18 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "FileStorage/1.0.0": {
+        "dependencies": {
+          "Payment.Registration.App": "1.0.0",
+          "Payment.Registration.Domain": "1.0.0"
+        },
+        "runtime": {
+          "FileStorage.dll": {}
+        },
+        "compile": {
+          "FileStorage.dll": {}
+        }
+      },
       "Payment.Registration.App/1.0.0": {
         "dependencies": {
           "AutoMapper": "8.0.0",
@@ -4391,6 +4404,11 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "FileStorage/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Payment.Registration.App/1.0.0": {
       "type": "project",

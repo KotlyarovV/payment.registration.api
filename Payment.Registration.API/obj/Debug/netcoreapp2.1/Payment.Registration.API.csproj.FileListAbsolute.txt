@@ -22,3 +22,5 @@ C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.API\obj\
 C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.API\obj\Debug\netcoreapp2.1\Payment.Registration.API.csproj.CopyComplete
 C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.API\obj\Debug\netcoreapp2.1\Payment.Registration.API.dll
 C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.API\obj\Debug\netcoreapp2.1\Payment.Registration.API.pdb
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.API\bin\Debug\netcoreapp2.1\FileStorage.dll
+C:\Users\Vitaly\RiderProjects\Payment.Registration\Payment.Registration.API\bin\Debug\netcoreapp2.1\FileStorage.pdb

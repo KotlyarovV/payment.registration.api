@@ -30,5 +30,19 @@ namespace Payment.Registration.API.Controllers
         {
             return await paymentFormAppService.Add(paymentFormSaveDto);
         }
+
+        [HttpPut]
+        [Route("{id}")]
+        public async Task Update(Guid id, [FromBody] PaymentFormUpdateDto paymentFormUpdateDto)
+        {
+            await paymentFormAppService.Update(id, paymentFormUpdateDto);
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task Delete(Guid id)
+        {
+            await paymentFormAppService.Delete(id);
+        }
     }
 }

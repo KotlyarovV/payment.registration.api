@@ -10,6 +10,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Registration.Ef", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payment.Registration.API", "Payment.Registration.API\Payment.Registration.API.csproj", "{259FBD67-9DCE-4F8E-AB2C-0E128B16482C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileStorage", "FileStorage\FileStorage.csproj", "{A341EC92-C41E-496C-B7EE-2377A0C92286}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{259FBD67-9DCE-4F8E-AB2C-0E128B16482C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{259FBD67-9DCE-4F8E-AB2C-0E128B16482C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{259FBD67-9DCE-4F8E-AB2C-0E128B16482C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A341EC92-C41E-496C-B7EE-2377A0C92286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A341EC92-C41E-496C-B7EE-2377A0C92286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A341EC92-C41E-496C-B7EE-2377A0C92286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A341EC92-C41E-496C-B7EE-2377A0C92286}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

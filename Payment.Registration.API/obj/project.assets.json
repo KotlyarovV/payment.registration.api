@@ -3136,6 +3136,20 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "FileStorage/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Payment.Registration.App": "1.0.0",
+          "Payment.Registration.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FileStorage.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FileStorage.dll": {}
+        }
+      },
       "Payment.Registration.App/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -9191,6 +9205,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "FileStorage/1.0.0": {
+      "type": "project",
+      "path": "../FileStorage/FileStorage.csproj",
+      "msbuildProject": "../FileStorage/FileStorage.csproj"
+    },
     "Payment.Registration.App/1.0.0": {
       "type": "project",
       "path": "../Payment.Registration.App/Payment.Registration.App.csproj",
@@ -9214,6 +9233,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "FileStorage >= 1.0.0",
       "Microsoft.AspNetCore >= 2.1.7",
       "Microsoft.AspNetCore.Mvc >= 2.2.0",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -9251,6 +9271,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\FileStorage\\FileStorage.csproj": {
+              "projectPath": "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\FileStorage\\FileStorage.csproj"
+            },
             "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\Payment.Registration.Infrastructure\\Payment.Registration.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Vitaly\\RiderProjects\\Payment.Registration\\Payment.Registration.Infrastructure\\Payment.Registration.Infrastructure.csproj"
             }
