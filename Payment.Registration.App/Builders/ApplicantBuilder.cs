@@ -12,7 +12,19 @@ namespace Payment.Registration.App.Builders
         {
             cfg
                 .ForMember(a => a.Id,
-                    expression => expression.MapFrom(a => Guid.NewGuid()));
+                    expression => expression.Ignore());
+        }
+
+        public override Applicant Build(ApplicantSaveDto saveDto)
+        {
+            var applicant = base.Build(saveDto);
+            applicant.Id = Guid.NewGuid();
+            return applicant;
+        }
+
+        public override void Map(ApplicantSaveDto saveDto, Applicant applicant)
+        {
+            base.Map(saveDto, applicant);
         }
     }
 }

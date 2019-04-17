@@ -1,7 +1,8 @@
 using System;
+using System.IO;
 using AutoMapper;
 using Payment.Registration.App.DTOs;
-using Payment.Registration.Domain.Models;
+using File = Payment.Registration.Domain.Models.File;
 
 namespace Payment.Registration.App.Builders
 {
@@ -15,7 +16,7 @@ namespace Payment.Registration.App.Builders
                 .ForMember(f => f.WayToFile,
                     expression =>
                         expression.MapFrom(
-                            f => $"{Guid.NewGuid()}{Guid.NewGuid()}"));
+                            f => $"{Guid.NewGuid()}{Guid.NewGuid()}.{f.Extension}"));
         }
     }
 }

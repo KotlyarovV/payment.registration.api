@@ -54,16 +54,19 @@ namespace Payment.Registration.API
                 .AddSwaggerGen(c => {  
                     c.SwaggerDoc("v1", new OpenApiInfo {  
                         Version = "v1",  
-                        Title = "Test API"
+                        Title = "Payment registration API"
                     });  
                 })
                 .AddScoped<IPaymentFormDataService, PaymentFormDataService>()
+                .AddScoped<FileAppService>()
+                .AddScoped<IBuilder<ApplicantSaveDto, Applicant>, ApplicantBuilder>()
+                .AddScoped<IPaymentPositionUpdateBuilder, PaymentPositionUpdateBuilder>()
+                .AddScoped<IMapper<PaymentFormUpdateDto, IReadOnlyCollection<PaymentPosition>, PaymentForm>, PaymentFormMapper>()
                 .AddScoped<IBuilder<Applicant, ApplicantDto>, Builder<Applicant, ApplicantDto>>()
                 .AddScoped<IBuilder<File, FileDto>, Builder<File, FileDto>>()
-                .AddScoped<IBuilder<PaymentPosition, PaymentPositionDto>, PaymentPositionDTOBuilder>()
-                .AddScoped<IBuilder<PaymentForm, PaymentFormDto>, PaymentFormDTOBuilder>()
+                .AddScoped<IBuilder<PaymentPosition, PaymentPositionDto>, PaymentPositionDtoBuilder>()
+                .AddScoped<IBuilder<PaymentForm, PaymentFormDto>, PaymentFormDtoBuilder>()
                 .AddScoped<IBuilder<FileSaveDto, File>, FileBuilder>()
-                .AddScoped<IBuilder<ApplicantSaveDto, Applicant>, ApplicantBuilder>()
                 .AddScoped<IBuilder<PaymentPositionSaveDto, IEnumerable<File>, PaymentPosition>, PaymentPositionBuilder>()
                 .AddScoped<IBuilder<PaymentFormSaveDto, IEnumerable<PaymentPosition>, int, PaymentForm>, PaymentFormBuilder>()
                 .AddScoped<IFileStorageService, FileStorage.FileStorage>()
@@ -81,7 +84,7 @@ namespace Payment.Registration.API
             app
                 .UseCors(b => b.AllowAnyOrigin())
                 .UseSwagger()
-                .UseSwaggerUI(swaggerUiOptions => swaggerUiOptions.SwaggerEndpoint("/swagger/v1/swagger.json", "My API v1"))
+                .UseSwaggerUI(swaggerUiOptions => swaggerUiOptions.SwaggerEndpoint("/swagger/v1/swagger.json", "Payment registration API"))
                 .UseMvc(routes =>
                 {
                     routes.MapRoute(

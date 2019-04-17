@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using AutoMapper;
 using Payment.Registration.App.DTOs;
 using Payment.Registration.Domain.Models;
+using Type = System.Type;
 
 namespace Payment.Registration.App.Builders
 {

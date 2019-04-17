@@ -16,12 +16,12 @@ namespace Payment.Registration.App.Builders
             mapper = new Mapper(new MapperConfiguration(cfg));
         }
 
-        public TDestination Build(TSource source)
+        public virtual TDestination Build(TSource source)
         {
             return mapper.Map<TSource, TDestination>(source);
         }
 
-        public void Map(TSource source, TDestination destination)
+        public virtual void Map(TSource source, TDestination destination)
         {
             mapper.Map(source, destination);
         }

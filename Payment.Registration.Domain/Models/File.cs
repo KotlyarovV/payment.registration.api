@@ -7,5 +7,7 @@ namespace Payment.Registration.Domain.Models
         public Guid Id { get; set; }
 
         public string WayToFile { get; set; }
+
+        public string Extension { get; set; }
     }
 }

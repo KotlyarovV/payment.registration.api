@@ -8,9 +8,13 @@ namespace Payment.Registration.App.Services
     {
         Task<IEnumerable<TEntity>> GetAll();
 
+        Task<IEnumerable<TEntity>> GetAll(ISpecification<TEntity> specification);
+        
         Task<TEntity> Get(ISpecification<TEntity> spec);
         
         Task<TEntity> Add(TEntity entity);
+
+        Task Update(TEntity entity);
 
         Task Remove(TEntity entity);
     }

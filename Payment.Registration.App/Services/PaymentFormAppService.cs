@@ -19,13 +19,17 @@ namespace Payment.Registration.App.Services
         private readonly IBuilder<PaymentPositionSaveDto, IEnumerable<File>, PaymentPosition> paymentPositionBuilder;
         private readonly IBuilder<PaymentFormSaveDto, IEnumerable<PaymentPosition>, int, PaymentForm> paymentFormBuilder;
         private readonly IFileStorageService fileStorageService;
+        private readonly IPaymentPositionUpdateBuilder paymentPositionUpdateBuilder;
+        private readonly IMapper<PaymentFormUpdateDto, IReadOnlyCollection<PaymentPosition>, PaymentForm> paymentFormUpdateBuilder;
 
         public PaymentFormAppService(IPaymentFormDataService paymentFormDataService,
             IBuilder<PaymentForm, PaymentFormDto> paymentFormDtoBuilder,
             IBuilder<FileSaveDto, File> fileBuilder,
             IBuilder<PaymentPositionSaveDto, IEnumerable<File>, PaymentPosition> paymentPositionBuilder,
             IBuilder<PaymentFormSaveDto, IEnumerable<PaymentPosition>, int, PaymentForm> paymentFormBuilder,
-            IFileStorageService fileStorageService)
+            IFileStorageService fileStorageService,
+            IPaymentPositionUpdateBuilder paymentPositionUpdateBuilder,
+            IMapper<PaymentFormUpdateDto, IReadOnlyCollection<PaymentPosition>, PaymentForm> paymentFormUpdateBuilder)
         {
             this.paymentFormDataService = paymentFormDataService;
             this.paymentFormDtoBuilder = paymentFormDtoBuilder;
@@ -33,6 +37,8 @@ namespace Payment.Registration.App.Services
             this.paymentPositionBuilder = paymentPositionBuilder;
             this.paymentFormBuilder = paymentFormBuilder;
             this.fileStorageService = fileStorageService;
+            this.paymentPositionUpdateBuilder = paymentPositionUpdateBuilder;
+            this.paymentFormUpdateBuilder = paymentFormUpdateBuilder;
         }
 
         public async Task<IEnumerable<PaymentFormDto>> Get()
@@ -62,14 +68,25 @@ namespace Payment.Registration.App.Services
                 })
                 .ToArray();
 
+            var newFilesToSave = files.Where(f => !f.FileDto.Id.HasValue)
+                .Select(f => new
+                {
+                    Bytes = Convert.FromBase64String(f.FileDto.File.FileInBase64), f.File.WayToFile
+                });
+            
+            await Task.WhenAll(newFilesToSave.Select(f => fileStorageService.Save(
+                new MemoryStream(f.Bytes), f.WayToFile)));
+            
             var existedItems = paymentForm.Items.ToDictionary(i => i.Id);
             var items = paymentFormUpdateDto.Items
-                .GroupJoin(files, p => p, p => p.Item, (dto, fs) => new
-                {
-                    Position = dto.Id.HasValue
-                    ? 
-                    
-                })
+                .GroupJoin(files, p => p, p => p.Item, (dto, fs) =>  dto.Id.HasValue
+                        ? paymentPositionUpdateBuilder.Map(dto, fs.Select(f => f.File).ToArray(),
+                            existedItems[dto.Id.Value])
+                        : paymentPositionUpdateBuilder.Build(dto, fs.Select(f => f.File).ToArray()))
+                .ToArray();
+
+            paymentFormUpdateBuilder.Map(paymentFormUpdateDto, items, paymentForm);
+            await paymentFormDataService.Update(paymentForm);
         }
         
         public async Task<Guid> Add(PaymentFormSaveDto paymentFormSaveDto)
@@ -99,7 +116,23 @@ namespace Payment.Registration.App.Services
         {
             var spec = new PaymentFormIdSpecification(id);
             var paymentForm = await paymentFormDataService.Get(spec);
+            var number = paymentForm.Number;
+
+            foreach (var file in paymentForm.Items.SelectMany(i => i.Files))
+            {
+                await fileStorageService.Delete(file.WayToFile);
+            }
+            
             await paymentFormDataService.Remove(paymentForm);
+            
+            var numberSpec = new PaymentFormNumbersMoreThenSpecification(number);
+            var paymentForms = await paymentFormDataService.GetAll(numberSpec);
+            
+            foreach (var form in paymentForms)
+            {
+                form.Number -= 1;
+                await paymentFormDataService.Update(form);
+            }
         }
     }
 }

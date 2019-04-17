@@ -6,13 +6,13 @@ using Type = System.Type;
 
 namespace Payment.Registration.App.Builders
 {
-    public class PaymentFormDTOBuilder : AbstractBuilder<PaymentForm, PaymentFormDto>,
+    public class PaymentFormDtoBuilder : AbstractBuilder<PaymentForm, PaymentFormDto>,
         IBuilder<PaymentForm, PaymentFormDto>
     {
         private readonly IBuilder<Applicant, ApplicantDto> applicantBuilder;
         private readonly IBuilder<PaymentPosition, PaymentPositionDto> paymentPositionDtoBuilder;
 
-        public PaymentFormDTOBuilder(IBuilder<Applicant, ApplicantDto> applicantBuilder,
+        public PaymentFormDtoBuilder(IBuilder<Applicant, ApplicantDto> applicantBuilder,
             IBuilder<PaymentPosition, PaymentPositionDto> paymentPositionDtoBuilder)
         {
             this.applicantBuilder = applicantBuilder;

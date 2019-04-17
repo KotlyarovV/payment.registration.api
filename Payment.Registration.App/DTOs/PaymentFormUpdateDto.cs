@@ -4,7 +4,7 @@ namespace Payment.Registration.App.DTOs
 {
     public class PaymentFormUpdateDto
     {
-        public ApplicantUpdateDto Applicant { get; set; }
+        public ApplicantSaveDto Applicant { get; set; }
 
         public TypeDto Type { get; set; }
 

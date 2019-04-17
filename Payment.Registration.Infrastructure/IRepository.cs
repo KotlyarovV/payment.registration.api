@@ -10,11 +10,11 @@ namespace Payment.Registration.Infrastructure
         Task<TEntity> Add(TEntity item);
         
         Task<TEntity> Get(ISpecification<TEntity> spec);
-        
-        IEnumerable<TEntity> Get(Func<TEntity, bool> predicate);
+
+        Task<IEnumerable<TEntity>> GetAll(ISpecification<TEntity> specification);
         
         Task Remove(TEntity item);
         
-        void Update(TEntity item); 
+        Task Update(TEntity item); 
     }
 }

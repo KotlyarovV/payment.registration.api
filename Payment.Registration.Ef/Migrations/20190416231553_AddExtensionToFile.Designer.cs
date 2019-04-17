@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Payment.Registration.Ef.DbContexts;
 
 namespace Payment.Registration.Ef.Migrations
 {
     [DbContext(typeof(PaymentFormDbContext))]
-    partial class PaymentFormDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190416231553_AddExtensionToFile")]
+    partial class AddExtensionToFile
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

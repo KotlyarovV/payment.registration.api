@@ -25,9 +25,9 @@ namespace Payment.Registration.Infrastructure
             return ConfigureQuery().Where(spec.IsSatisfiedBy).SingleAsync();
         }
          
-        public IEnumerable<TEntity> Get(Func<TEntity, bool> predicate)
+        public async Task<IEnumerable<TEntity>> GetAll(ISpecification<TEntity> spec)
         {
-            return ConfigureQuery().Where(predicate).ToList();
+            return await ConfigureQuery().Where(spec.IsSatisfiedBy).ToListAsync();
         }
  
         public async Task<TEntity> Add(TEntity item)
@@ -37,10 +37,10 @@ namespace Payment.Registration.Infrastructure
             return item;
         }
         
-        public void Update(TEntity item)
+        public async Task Update(TEntity item)
         {
             context.Entry(item).State = EntityState.Modified;
-            context.SaveChanges();
+            await context.SaveChangesAsync();
         }
         
         public async Task Remove(TEntity item)

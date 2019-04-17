@@ -6,7 +6,7 @@
     <e p="C:\Users\Vitaly\RiderProjects\Payment.Registration" t="IncludeFlat">
       <e p="FileStorage" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
+        <e p="FileStorage.cs" t="Include" />
         <e p="FileStorage.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -23,6 +23,7 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="FileController.cs" t="Include" />
           <e p="PaymentFormController.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -48,15 +49,17 @@
           <e p="Builder.cs" t="Include" />
           <e p="FileBuilder.cs" t="Include" />
           <e p="IBuilder.cs" t="Include" />
+          <e p="IPaymentPositionUpdateBuilder.cs" t="Include" />
           <e p="PaymentFormBuilder.cs" t="Include" />
           <e p="PaymentFormDTOBuilder.cs" t="Include" />
+          <e p="PaymentFormMapper.cs" t="Include" />
           <e p="PaymentPositionBuilder.cs" t="Include" />
           <e p="PaymentPositionDTOBuilder.cs" t="Include" />
+          <e p="PaymentPositionUpdateBuilder.cs" t="Include" />
         </e>
         <e p="DTOs" t="Include">
           <e p="ApplicantDto.cs" t="Include" />
           <e p="ApplicantSaveDto.cs" t="Include" />
-          <e p="ApplicantUpdateDto.cs" t="Include" />
           <e p="FileDto.cs" t="Include" />
           <e p="FileSaveDto.cs" t="Include" />
           <e p="FileUpdateDto.cs" t="Include" />
@@ -77,6 +80,7 @@
         </e>
         <e p="Payment.Registration.App.csproj" t="IncludeRecursive" />
         <e p="Services" t="Include">
+          <e p="FileAppService.cs" t="Include" />
           <e p="IDataService.cs" t="Include" />
           <e p="IFileStorageService.cs" t="Include" />
           <e p="IPaymentFormDataService.cs" t="Include" />
@@ -103,6 +107,7 @@
         <e p="Specifications" t="Include">
           <e p="ISpecification.cs" t="Include" />
           <e p="PaymentFormIdSpecification.cs" t="Include" />
+          <e p="PaymentFormNumbersMoreThenSpecification.cs" t="Include" />
         </e>
       </e>
       <e p="Payment.Registration.Ef" t="IncludeRecursive">
@@ -118,6 +123,8 @@
         <e p="Migrations" t="Include">
           <e p="20190416075124_Start.cs" t="Include" />
           <e p="20190416075124_Start.Designer.cs" t="Include" />
+          <e p="20190416231553_AddExtensionToFile.cs" t="Include" />
+          <e p="20190416231553_AddExtensionToFile.Designer.cs" t="Include" />
           <e p="PaymentFormDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

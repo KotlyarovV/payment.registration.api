@@ -5,12 +5,12 @@ using Payment.Registration.Domain.Models;
 
 namespace Payment.Registration.App.Builders
 {
-    public class PaymentPositionDTOBuilder : AbstractBuilder<PaymentPosition, PaymentPositionDto>, 
+    public class PaymentPositionDtoBuilder : AbstractBuilder<PaymentPosition, PaymentPositionDto>, 
         IBuilder<PaymentPosition, PaymentPositionDto>
     {
         private readonly IBuilder<File, FileDto> fileDtoBuilder;
 
-        public PaymentPositionDTOBuilder(IBuilder<File, FileDto> fileDtoBuilder)
+        public PaymentPositionDtoBuilder(IBuilder<File, FileDto> fileDtoBuilder)
         {
             this.fileDtoBuilder = fileDtoBuilder;
         }
