@@ -82,7 +82,7 @@ namespace Payment.Registration.API
             }
 
             app
-                .UseCors(b => b.AllowAnyOrigin())
+                .UseCors(b => b.AllowAnyOrigin().AllowAnyMethod())
                 .UseSwagger()
                 .UseSwaggerUI(swaggerUiOptions => swaggerUiOptions.SwaggerEndpoint("/swagger/v1/swagger.json", "Payment registration API"))
                 .UseMvc(routes =>
