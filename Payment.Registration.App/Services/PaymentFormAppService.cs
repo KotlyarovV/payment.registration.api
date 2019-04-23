@@ -87,6 +87,14 @@ namespace Payment.Registration.App.Services
 
             paymentFormUpdateBuilder.Map(paymentFormUpdateDto, items, paymentForm);
             await paymentFormDataService.Update(paymentForm);
+
+            var resultFileIds =
+                new HashSet<Guid>(paymentForm.Items.SelectMany(i => i.Files, (position, file) => file.Id));
+
+            foreach (var file in existedFiles.Values.Where(f => !resultFileIds.Contains(f.Id)))
+            {
+                await fileStorageService.Delete(file.WayToFile);
+            }
         }
         
         public async Task<Guid> Add(PaymentFormSaveDto paymentFormSaveDto)
